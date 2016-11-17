@@ -2,6 +2,11 @@
 
 import React, { Component } from 'react';
 
+/**
+ * 将fetch promise 包装成可取消的promise
+ * @param  {Promise} promise fetch promise
+ * @return {Promise}         可取消的promise
+ */
 function cancelablePromise(promise) {
 
 	let hasCanceled = false

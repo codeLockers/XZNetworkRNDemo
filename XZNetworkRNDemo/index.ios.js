@@ -54,24 +54,24 @@ export default class XZNetworkRNDemo extends Component {
     // })
     
     //FCXMLHttpRequest
-    // let request = FCXMLHttpRequest.get(url,() => {
-    //   console.log('callback')
-    // })
+    let request = FCXMLHttpRequest.get(url,() => {
+      console.log('callback')
+    })
 
-    // let request = FCXMLHttpRequest.post(url,{key:'ed9b4f04b02a265a3684e256c6ff6f22',cityname:'苏州'},() => {
-    //   console.log('callback')
-    // })
+    let request = FCXMLHttpRequest.post(url,{key:'ed9b4f04b02a265a3684e256c6ff6f22',cityname:'苏州'},() => {
+      console.log('callback')
+    })
     
 
     //Axios GET请求
-    // FCAxiosHelper.get(url,() => {
-    //   console.log(callback)
-    // })
+    FCAxiosHelper.get(url,() => {
+      console.log(callback)
+    })
 
     //Axios POST请求
-    // FCAxiosHelper.post(url,{key:'ed9b4f04b02a265a3684e256c6ff6f22',cityname:'苏州'},() => {
-    //   console.log('callback')
-    // })
+    FCAxiosHelper.post(url,{key:'ed9b4f04b02a265a3684e256c6ff6f22',cityname:'苏州'},() => {
+      console.log('callback')
+    })
   }
 
   _stop(){
